@@ -4,14 +4,14 @@ body {
 	overflow: hidden;
 	--background: #0f0f0f;
 	--color: #dfdfdf;
-	--points: #ffffff;
+	--points: #dfdfdf;
 	background: var(--background)
 }
 
 /* General text */
 h1, h2, h3, b, input {
 	display: inline;
-	font-family: "Lucida Console", "Courier New", monospace
+	font-family: "Trebuchet MS";
 }
 
 /* These are styles for different states of components. You can make layer-specific versions with .c.locked, for example */

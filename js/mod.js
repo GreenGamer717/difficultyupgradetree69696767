@@ -1,7 +1,7 @@
 let modInfo = {
-	name: "The ??? Tree",
+	name: "The Difficulty Skill Tree",
 	author: "nobody",
-	pointsName: "points",
+	pointsName: "skill",
 	modFiles: ["layers.js", "tree.js"],
 
 	discordName: "",
@@ -41,7 +41,10 @@ function getPointGen() {
 	if(!canGenPoints())
 		return new Decimal(0)
 
-	let gain = new Decimal(1)
+	let gain = new Decimal(0)
+
+	if (hasUpgrade('p', 11)) gain = gain.add(1)
+	if (hasUpgrade('p', 12)) gain = gain.times(2)
 	return gain
 }
 
